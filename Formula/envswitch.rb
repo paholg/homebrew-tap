@@ -1,25 +1,25 @@
 class Envswitch < Formula
   desc "A simple tool for managing sets of environment variables"
   homepage "https://github.com/paholg/envswitch"
-  version "0.5.6"
+  version "0.5.7"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/paholg/envswitch/releases/download/v0.5.6/envswitch-aarch64-apple-darwin.tar.xz"
-      sha256 "b7ad56025b5037ec9a9a6cff42eb5a1fcc2161b2e7d2a11a5495d56e8d7ddded"
+      url "https://github.com/paholg/envswitch/releases/download/v0.5.7/envswitch-aarch64-apple-darwin.tar.xz"
+      sha256 "323e60eaa079200a156887046dc29a93af18608a19b418fd922b0133e2a870ab"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/paholg/envswitch/releases/download/v0.5.6/envswitch-x86_64-apple-darwin.tar.xz"
-      sha256 "988edfb39655f572df7120827f70c79cdc23b5beb10f2c2b9bd0df6bd9d6ceec"
+      url "https://github.com/paholg/envswitch/releases/download/v0.5.7/envswitch-x86_64-apple-darwin.tar.xz"
+      sha256 "2b651e7221d5a1bc95eaa96a35f68f836feef01f091fe54a79473360ba3db1af"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/paholg/envswitch/releases/download/v0.5.6/envswitch-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "2eb7f39d15fa529ca389f9b839552f23e70f7d8c20c809562514f84b22bd1f1c"
+      url "https://github.com/paholg/envswitch/releases/download/v0.5.7/envswitch-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "7f9aa64d1b127f60fb7c5ed4502d1abcc34f1267424e1f64f89e1299391ee746"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/paholg/envswitch/releases/download/v0.5.6/envswitch-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "7c46f22522a1b647398d5fece0f460d3d8322632b5d1075aab66f9c34eb3feb2"
+      url "https://github.com/paholg/envswitch/releases/download/v0.5.7/envswitch-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "7ee9e139a624490345feecb4f890e0e59e72a69bada2f91495ac9678e7690118"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
