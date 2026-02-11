@@ -1,25 +1,25 @@
 class Dc < Formula
   desc "Worktree aware devcontainer manager"
   homepage "https://github.com/paholg.dc"
-  version "0.0.4"
+  version "0.0.5"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/paholg/dc/releases/download/v0.0.4/dc-aarch64-apple-darwin.tar.xz"
-      sha256 "391bfa7e3de767a79750db91af8ce864fde96854f395a1e45ae45274566765ca"
+      url "https://github.com/paholg/dc/releases/download/v0.0.5/dc-aarch64-apple-darwin.tar.xz"
+      sha256 "e6867dd2f055eb4e5897a343449e300d2c525680290691c450e96837ced1e215"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/paholg/dc/releases/download/v0.0.4/dc-x86_64-apple-darwin.tar.xz"
-      sha256 "44f12df1572a26de09d3cbde3c97cc323a3acba8e53a7413ef204e0a7e067dbd"
+      url "https://github.com/paholg/dc/releases/download/v0.0.5/dc-x86_64-apple-darwin.tar.xz"
+      sha256 "bfc7631dd6f99d12c640278442a3fc6776abfd0b922b834e525b0ed9589baff6"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/paholg/dc/releases/download/v0.0.4/dc-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "0abf9893182ed0321fd8b424155e686dd762feb289e732fcee62d998819460f9"
+      url "https://github.com/paholg/dc/releases/download/v0.0.5/dc-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "19c2b9e65c36b54268da9c133fbef31ef32edd16d9dbf916c6c51602b7457c0b"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/paholg/dc/releases/download/v0.0.4/dc-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "d8d35707ea52a71b334a0e4626a03487681b3ef1178895fac817fe2c5d6dc17e"
+      url "https://github.com/paholg/dc/releases/download/v0.0.5/dc-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "af7671c6fe3cc3377d704b27cecfdb9fc06ba9a50f51a0ba1cd139a3da03af63"
     end
   end
 
