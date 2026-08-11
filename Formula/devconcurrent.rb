@@ -1,25 +1,25 @@
 class Devconcurrent < Formula
   desc "Worktree aware devcontainer manager, for concurrent development"
   homepage "https://github.com/paholg/devconcurrent"
-  version "0.0.20"
+  version "0.0.21"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/paholg/devconcurrent/releases/download/v0.0.20/devconcurrent-aarch64-apple-darwin.tar.xz"
-      sha256 "89883647a1fba22dc3aebd175a01e76d6ba8651c31a54d28f3d07420bc0f42e6"
+      url "https://github.com/paholg/devconcurrent/releases/download/v0.0.21/devconcurrent-aarch64-apple-darwin.tar.xz"
+      sha256 "c400c2b9110c7337f283e5318d0dfdb409a95e7d0198c6862406e7f5b30aac49"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/paholg/devconcurrent/releases/download/v0.0.20/devconcurrent-x86_64-apple-darwin.tar.xz"
-      sha256 "13570970619094cdde8d07b630fcf191c7a4bc17fc421bb158cfc1f00731e7c5"
+      url "https://github.com/paholg/devconcurrent/releases/download/v0.0.21/devconcurrent-x86_64-apple-darwin.tar.xz"
+      sha256 "8de24a3b07481a9f47ddf9be5f3d32b278a5f0cc71a8d20df53ebc8a05c7c40c"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/paholg/devconcurrent/releases/download/v0.0.20/devconcurrent-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "a1f60770dee83584586c50d3021257c605425d6b370f8fd9f327943968e0f36c"
+      url "https://github.com/paholg/devconcurrent/releases/download/v0.0.21/devconcurrent-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "95c5e0b380b0a65332f7ce4de7597cd24367615184d0405be03707afbad8f3ca"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/paholg/devconcurrent/releases/download/v0.0.20/devconcurrent-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "ab917a770fd23ef18749d1b8365aefa25deb3fc6f090421f7596e3dbbb955313"
+      url "https://github.com/paholg/devconcurrent/releases/download/v0.0.21/devconcurrent-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "9b37e63edd0d7ce56339c34f3f90cf1d06e4374038b3e3a6571462aa8cd750dc"
     end
   end
 
@@ -46,10 +46,18 @@ class Devconcurrent < Formula
   end
 
   def install
-    bin.install "devconcurrent" if OS.mac? && Hardware::CPU.arm?
-    bin.install "devconcurrent" if OS.mac? && Hardware::CPU.intel?
-    bin.install "devconcurrent" if OS.linux? && Hardware::CPU.arm?
-    bin.install "devconcurrent" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "devconcurrent"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "devconcurrent"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "devconcurrent"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "devconcurrent"
+    end
 
     install_binary_aliases!
 
