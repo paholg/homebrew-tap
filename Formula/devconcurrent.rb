@@ -1,25 +1,25 @@
 class Devconcurrent < Formula
   desc "Worktree aware devcontainer manager, for concurrent development"
-  homepage "https://github.com/paholg/devconcurrent"
-  version "0.0.25"
+  homepage "https://devconcurrent.paholg.com"
+  version "0.0.26"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/paholg/devconcurrent/releases/download/v0.0.25/devconcurrent-aarch64-apple-darwin.tar.xz"
-      sha256 "d2f5f5e7c3547c7ac5f7923a842e35131da13c406a13b0e839a71f6947f80ce6"
+      url "https://github.com/paholg/devconcurrent/releases/download/v0.0.26/devconcurrent-aarch64-apple-darwin.tar.xz"
+      sha256 "5f6a19b38739167779deb13e5bd3d0fa24fca957529814e171aabb4823512e24"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/paholg/devconcurrent/releases/download/v0.0.25/devconcurrent-x86_64-apple-darwin.tar.xz"
-      sha256 "02f6effe4b6f67894b103f7ea5e0ba6d07698c737d513458efaa3ca70645fd30"
+      url "https://github.com/paholg/devconcurrent/releases/download/v0.0.26/devconcurrent-x86_64-apple-darwin.tar.xz"
+      sha256 "b37b116a1189fb03d252c5a9c438811592b32b9cbdc8d4f0812cac9886cc0bf3"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/paholg/devconcurrent/releases/download/v0.0.25/devconcurrent-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "e2666a519fcea62bc3246fdbc843d94248c37bc384f3155c36c3226ce131cc54"
+      url "https://github.com/paholg/devconcurrent/releases/download/v0.0.26/devconcurrent-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "90b8e0550d00f9bd6963b290342d430af8b4a4ff4b733b4e498990ff67245602"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/paholg/devconcurrent/releases/download/v0.0.25/devconcurrent-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "4b4f78121731a5351b1a2efe6e700d5ba1391c5585b8ac0d2a8206b3a1d5ff14"
+      url "https://github.com/paholg/devconcurrent/releases/download/v0.0.26/devconcurrent-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "6e924142f29000b5bf12bc2e140b63ada6774571dbf273b564ebd4d50142fc4d"
     end
   end
 
