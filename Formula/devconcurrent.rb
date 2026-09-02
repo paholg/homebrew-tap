@@ -1,25 +1,25 @@
 class Devconcurrent < Formula
   desc "Worktree aware devcontainer manager, for concurrent development"
   homepage "https://devconcurrent.paholg.com"
-  version "0.0.29"
+  version "0.0.30"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/paholg/devconcurrent/releases/download/v0.0.29/devconcurrent-aarch64-apple-darwin.tar.xz"
-      sha256 "624da2ef65865fe41b4e11034456ac11c954057030dc909d10217bb2aa4dde44"
+      url "https://github.com/paholg/devconcurrent/releases/download/v0.0.30/devconcurrent-aarch64-apple-darwin.tar.xz"
+      sha256 "b7a57a28f744d90607fb62d20197285ecddf90623801d7264efa83e428f95c83"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/paholg/devconcurrent/releases/download/v0.0.29/devconcurrent-x86_64-apple-darwin.tar.xz"
-      sha256 "80c507c29d24b50d6b93dd0889d59e12c3a73d4603dec1c8d7899a8f58bfdeb9"
+      url "https://github.com/paholg/devconcurrent/releases/download/v0.0.30/devconcurrent-x86_64-apple-darwin.tar.xz"
+      sha256 "0d2f92d0e542ae3771b54d8f90878501fe9178c99b162223561a6a6ecbc4324e"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/paholg/devconcurrent/releases/download/v0.0.29/devconcurrent-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "4ddf91d705ecf3b9ea080bdf02c3393a7114f802d9e8941ce46b5012ecb787c8"
+      url "https://github.com/paholg/devconcurrent/releases/download/v0.0.30/devconcurrent-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "c5afe37469da16aeb6d2f8549ebda49f34220539b8953776318a9c12043d5cf6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/paholg/devconcurrent/releases/download/v0.0.29/devconcurrent-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "dd053201a29f9496d6763a5359cce25b9e0d17b08630775c89c8c00df49ebf11"
+      url "https://github.com/paholg/devconcurrent/releases/download/v0.0.30/devconcurrent-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "aff979332e1743b5611d5a576296aabc8d3a46c38b2b1a9c893b8289476fc6bc"
     end
   end
 
